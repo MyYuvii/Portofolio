@@ -1,8 +1,7 @@
 body {
-    background-color: #f5f5f5;
+    background-color: hsl(34, 36%, 88%);
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -10,6 +9,7 @@ body {
     padding: 1rem;
     position: sticky;
     text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar ul {
@@ -36,16 +36,18 @@ body {
 
 #headline {
     color: #f5f5f5;
-    margin-left: 800px;
+    margin-left: 700px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 .info {
-    margin-left: 50px;
-    padding: 1rem;
-    height: auto;
-    width: 550px;
-    background-color: #1c3a4d;
-    
+    text-align: center;
+}
+
+#judul {
+    font-size: 57px;
+    text-align: center;
+    margin-top: 195px;
+    font-family: 'Times New Roman', Times, serif;
 }
