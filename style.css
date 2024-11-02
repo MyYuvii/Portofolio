@@ -4,6 +4,7 @@ body {
     padding: 0;
 }
 
+/* Navbar */
 .navbar {
     background-color: #1c3a4d;
     padding: 1rem;
@@ -34,9 +35,10 @@ body {
     background-color: hsl(203, 43%, 29%);
 }
 
+/* Home */
 #headline {
     color: #f5f5f5;
-    margin-left: 700px;
+    margin-left: 690px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -50,4 +52,40 @@ body {
     text-align: center;
     margin-top: 195px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/* Profile */
+.half {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 2;
+    right: 0;
+    background-color: #F0C146;
+}
+
+#kenal {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    position: absolute;
+    padding: 1px;
+    left: 55px;
+    top: 85px;
+}
+
+#kenals2 {
+    font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;;
+    position: absolute;
+    padding: 1px;
+    left: 55px;
+    top: 230px;
+}
+
+.half-left {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 2;
+    left: 0;
 }
