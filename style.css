@@ -69,7 +69,7 @@ body {
     position: absolute;
     top: 2;
     right: 0;
-    background-color: rgb(232, 190, 85);
+    background-color: hsl(43, 80%, 70%);
 }
 
 #kenal {
@@ -90,13 +90,42 @@ body {
     margin-right: 100px;
     position: absolute;
     left: 50px;
-    top: 265px;
+    top: 250px;
 }
 
 .half-left {
     width: 50%;
     height: 100vh;
     position: relative;
+}
+
+#visi {
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 820;
+}
+
+#misi {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 820;
+}
+
+.half-left ul {
+    list-style-type: none;
+    font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+}
+
+.half-left li {
+    margin-top: 7px;
+    margin-right: 100px;
+    margin-left: 50px;
+    font-size: 15px;
 }
 
 footer {
