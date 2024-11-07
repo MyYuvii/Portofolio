@@ -76,21 +76,18 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 820;
     font-size: 58px;
-    position: absolute;
-    padding: 15px;
-    left: 50px;
-    top: 120px;
+    text-align: center;
+    padding-top: 125px;
 }
 
 .kenals2 {
     text-align: justify;
     font-size: 15px;
     font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
-    padding: 15px;
-    margin-right: 100px;
+    margin-right: 90px;
     position: absolute;
-    left: 50px;
-    top: 250px;
+    left: 90px;
+    top: 240px;
 }
 
 .half-left {
@@ -126,6 +123,7 @@ body {
     margin-right: 100px;
     margin-left: 50px;
     font-size: 15px;
+    text-align: justify;
 }
 
 footer {
