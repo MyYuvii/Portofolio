@@ -16,7 +16,7 @@ document.querySelectorAll(".index").forEach(link => {
     link.addEventListener("click", function (e) {
         e.preventDefault();
 
-        document.body.classList.add("fade-out");
+        document.body.classList.add("fade-out2");
 
         const targetUrl = this.href;
 
