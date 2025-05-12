@@ -317,6 +317,7 @@ footer {
 .project-link:hover {
     font-size: 17px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .limited-text {
