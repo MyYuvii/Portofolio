@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            background-color: brown;
+        }
+
+        .anjay {
+            height: auto;
+            width: 500px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            background-color: rgb(255, 255, 255);
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            color: rgb(252, 252, 252);
+        }
+
+        .ucup {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #hasil {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 10px;
+            height: 30px;
+            width: 400px;
+        }
+
+        h1 {
+            padding-top: 35px;
+            text-align: center;
+            color: rgb(151, 58, 58);
+        }
+    </style>
+</head>
+<body>
+    <div class="anjay">
+        <h1>Kalkulator Alakadarnya</h1>
+        <form id="calcForm">
+            <div class="ucup">
+                <label for="bil_a">Bilangan A:</label>
+                <input type="number" id="bil_a" required><br><br>
+                
+                <label for="bil_b">Bilangan B:</label>
+                <input type="number" id="bil_b" required><br><br>
+                
+                <label for="operation">Operasi:</label>
+                <select id="operation" required>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select><br><br>
+                
+                <button type="submit">Hitung</button> <br>
+
+                <input type=text" id="hasil" readonly>
+                <p style="text-align: center; color: rgb(0, 0, 0);"><span style="font-weight: bold;">Warning!</span> 10 detik setelah operasi selesai, program akan otomatis di reset</p>
+
+            </div>
+        </form>
+        
+    </div>
+    <br><br>
+    <p style="text-align: center; color: white;">Kalkulator alakadarnya, begitupun styling-nya... alakadarnya</p>
+    
+    <script>
+        document.getElementById('calcForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent page reload
+
+    let bil_a = parseFloat(document.getElementById('bil_a').value);
+    let bil_b = parseFloat(document.getElementById('bil_b').value);
+    let operation = document.getElementById('operation').value;
+    let result = 0;
+
+    switch (operation) {
+        case '+':
+            result = bil_a + bil_b;
+            break;
+        case '-':
+            result = bil_a - bil_b;
+            break;
+        case '*':
+            result = bil_a * bil_b;
+            break;
+        case '/':
+            if (bil_b != 0) {
+                result = bil_a / bil_b;
+            } else {
+                result = "Error: Pembagian dengan nol tidak diizinkan.";
+            }
+            break;
+        default:
+            result = "Operasi tidak valid.";
+    }
+
+    document.getElementById('hasil').value = "Hasil = " + bil_a + " " + operation + " " + bil_b + " = " + result;
+    setTimeout(function() {
+        document.getElementById('calcForm').reset();
+        document.getElementById('hasil').value = "";
+    }, 10000);
+});
+            </script>
+</body>
+</html>
